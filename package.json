@@ -1,0 +1,30 @@
+{
+  "name": "node-babel-file-generator",
+  "version": "1.0.0",
+  "description": "This module generate new .js file what is transpiled with babel-presets-env",
+  "main": "index.js",
+  "scripts": {
+    "test": "./test.js"
+  },
+  "keywords": [
+    "node",
+    "babel",
+    "file",
+    "generator"
+  ],
+  "author": "hyeoksu.han@gmail.com",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 0.12.18"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "bluebird": "^3.5.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1"
+  },
+  "readme": "README.md"
+}
