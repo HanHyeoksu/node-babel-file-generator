@@ -15,9 +15,9 @@ var defaultOpts = {
 };
 
 // private functions
-function Babeler() {
-  if (!(this instanceof Babeler)) {
-    return new Babeler();
+function Generator() {
+  if (!(this instanceof Generator)) {
+    return new Generator();
   }
 
   files = [];
@@ -41,13 +41,13 @@ function getBabelHeader(modules) {
 };
 
 // public functions
-Babeler.prototype.clean = function() {
+Generator.prototype.clear = function() {
   return Promise.each(files, function(file) {
     return fs.unlinkSync(file);
   });
 };
 
-Babeler.prototype.transformFile = function(info) {
+Generator.prototype.transformFile = function(info) {
   var srcfile = info.srcfile;
   var dstpath = info.dstpath || path.dirname(srcfile);
   var dstfilename = info.dstfilename || '_' + path.basename(srcfile);
@@ -87,4 +87,4 @@ Babeler.prototype.transformFile = function(info) {
     });
 };
 
-module.exports = Babeler;
+module.exports = Generator;

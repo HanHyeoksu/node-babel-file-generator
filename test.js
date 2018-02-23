@@ -1,16 +1,14 @@
 #!/usr/bin/env node
-var Transpiler = require('./');
-var transpiler = new Transpiler();
+var Generator = require('./');
+var generator = new Generator();
 
-var testfile = 'testfiles/test.js';
-
-transpiler.transformFile({
-	srcfile: testfile,
-	opts: {
-		minified: true
-	}
-	
+generator.transformFile({
+  srcfile: 'testfiles/test.js',
+  opts: {
+    minified: true,
+    modules: 'koa'
+  }
 })
-.then(function(res) {
-	console.log(res);
+.then(function(outputfile) {
+  console.log('Output:', outputfile);
 });
