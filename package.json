@@ -1,7 +1,7 @@
 {
   "name": "node-babel-file-generator",
   "version": "1.0.0",
-  "description": "This module generate new .js file what is transpiled with babel-presets-env",
+  "description": "Create new js file compatible with old Node.js version using babel.',
   "main": "index.js",
   "scripts": {
     "test": "./test.js"
