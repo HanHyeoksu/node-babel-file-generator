@@ -74,7 +74,7 @@ Generator.prototype.transformFile = function(info) {
           return writeFileAsync(codefile, result.code)
             .then(function() {
               files.push(codefile);
-              return util.format("%s\nrequire('./%s');", header, path.basename(codefile));
+              return util.format("%s\nmodule.exports = require('./%s');", header, path.basename(codefile));
             });
         });
     })
