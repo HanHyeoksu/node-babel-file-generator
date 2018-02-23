@@ -3,10 +3,10 @@
 [![node][node-image]][node-url]
 [![npm][npm-image]][npm-url]
 
-[node-image]: https://img.shields.io/node/v/@stdlib/stdlib.svg
+[node-image]: https://img.shields.io/badge/node-%3E%3D%200.12.18-brightgreen.svg
 [node-url]: https://nodejs.org
 
-[npm-image]: https://img.shields.io/badge/npm-1.0.0-blue.svg
+[npm-image]: https://img.shields.io/badge/npm-2.15.11-blue.svg
 [npm-url]: https://www.npmjs.com/
 
 ## About
@@ -66,13 +66,14 @@ var yourTurn = "Type some code in here!";
 All methods are asynchronous functions using [bluebird](http://bluebirdjs.com/docs/getting-started.html) module.
 So, you can use an useful [bluebird's promise functions](http://bluebirdjs.com/docs/api-reference.html) at the return value.
 
-## Create instance
+## Usage
+> ### Create instance
 ```js
 var Generator = require('node-babel-file-generator');
 var generator = new Generator();
 ```
 
-## generator.transformFile(info)
+> ### generator.transformFile(info)
 **Return**: full path of output file(s)
 
 **info**: *object*
@@ -123,6 +124,31 @@ var func = function func(a, b) {
 };
 ```
 
-## generator.clear()
+> ### generator.clear()
 
 Remove all generated files since its instance is generated.
+
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2018 Hyeoksu Han &lt;hyeoksu.han@gmail.com&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

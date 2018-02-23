@@ -13,7 +13,7 @@
     "generator"
   ],
   "author": "hyeoksu.han@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "engines": {
     "node": ">= 0.12.18"
   },
@@ -26,5 +26,8 @@
   "devDependencies": {
     "babel-preset-env": "^1.6.1"
   },
-  "readme": "README.md"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HanHyeoksu/node-babel-file-generator.git"
+  }
 }
