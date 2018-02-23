@@ -1,7 +1,7 @@
 {
   "name": "node-babel-file-generator",
   "version": "1.0.0",
-  "description": "Create new js file compatible with old Node.js version using babel.',
+  "description": "Create new js file compatible with old Node.js version using babel.",
   "main": "index.js",
   "scripts": {
     "test": "./test.js"
