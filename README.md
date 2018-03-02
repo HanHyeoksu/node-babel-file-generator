@@ -1,13 +1,9 @@
 # node-babel-file-generator
 
 [![node][node-image]][node-url]
-[![npm][npm-image]][npm-url]
 
 [node-image]: https://img.shields.io/badge/node-%3E%3D%200.12.18-brightgreen.svg
 [node-url]: https://nodejs.org
-
-[npm-image]: https://img.shields.io/badge/npm-2.15.11-blue.svg
-[npm-url]: https://www.npmjs.com/
 
 ## About
 **Input**: Node.js file(s) that is written with ECMA5 or higher in old version Node.js.
